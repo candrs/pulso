@@ -1,9 +1,51 @@
+@font-face {
+  font-family: 'pulsoico';
+  src:  url('fuentes/pulsoico.eot?895aon');
+  src:  url('fuentes/pulsoico.eot?895aon#iefix') format('embedded-opentype'),
+    url('fuentes/pulsoico.ttf?895aon') format('truetype'),
+    url('fuentes/pulsoico.woff?895aon') format('woff'),
+    url('fuentes/pulsoico.svg?895aon#pulsoico') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pulsoico' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil2:before {
+  content: "\e906";
+  margin-right: .5em;
+}
+.icon-star-full:before {
+  content: "\e9d9";
+  color: #ffbe2c;
+  margin-right: .5em;
+}
+.icon-circle-up:before {
+  content: "\ea41";
+}
+.icon-circle-down:before {
+  content: "\ea43";
+  color: #dd4f24;
+}
 a{
   color: #22bce0;
 }
 body{
   background-color: #eeeeee;
-  font-family: "Arial";
+  font-family: "Open Sans";
   font-size: 16px;
 }
 header{
@@ -140,7 +182,27 @@ figure{
   padding: .2em;
   border-radius: 0 0 .5em .5em;
 }
+#contenido .item .votacion a{
+  text-decoration: none;
+}
 #contenido .item .votacion .comentarios_item,
 #contenido .item .votacion .guardar_item{
   float: right;
+}
+/*@media print {
+  body{
+    font-size: 50px;
+  }
+}*/
+@media screen and (min-width:768px) {
+  #contenido{
+    overflow: hidden;
+  }
+  #contenido .item{
+    width: 48%;
+    display: inline-block;
+  }
+  #contenido .item:nth-child(odd){
+    margin-right: 2%;
+  }
 }
