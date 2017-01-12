@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="estilos.css">
+    <script src="js/prefixfree.min.js"></script>
     <title>Pulso</title>
   </head>
   <body>
@@ -27,9 +28,24 @@
         <li><a href="#">Javascript</a></li>
         <li><a href="#">CSS3</a></li>
         <li><a href="#">Django</a></li>
-        <li id="publicar_nav"><a href="#" class="icon-pencil2">Publicar</a></li>
+        <li id="publicar_nav"><a href="#" id="mostrar-form" class="icon-pencil2">Publicar</a></li>
       </ul>
     </nav>
+    <form id="formulario" class="formulario" action="">
+      <input type="text" id="titulo" placeholder="Titulo" name="" value="" required>
+      <input type="url" id="url" placeholder="Link" name="" value="" required>
+      <input type="submit" name="" value="Agregar">
+    </form>
+    <aside class="video-cont">
+      <div class="video">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/-hF_6SLpeNs" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- <video  autoplay poster="posterimage.jpg">
+        <source src="https://youtu.be/-hF_6SLpeNs" type="video/">
+      </video> -->
+    </aside>
+
+
     <section id="contenido">
       <article class="item">
         <figure class="imagen_item">
@@ -196,5 +212,8 @@
         Creatyvos.com
       </p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="formulario.js">
+    </script>
   </body>
 </html>
