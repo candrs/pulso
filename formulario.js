@@ -18,7 +18,7 @@ var id = setInterval(function() {
 function mostrarFormulario() {
   $form.slideToggle();
   $list.slideToggle();
-  return false;
+return false;
 }
 
 function agregarPost() {
@@ -37,8 +37,7 @@ function agregarPost() {
   $titulo.val("");
   $url.val("");
   $clone.fadeIn();
-
-  return false;
+return false;
 }
 // Eventos
 $button.click( mostrarFormulario );
