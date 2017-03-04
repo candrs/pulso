@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @font-face {
   font-family: 'pulsoico';
   src:  url('fuentes/pulsoico.eot?895aon');
@@ -105,6 +106,11 @@ nav ul #publicar_nav a{
   text-shadow: 2px 2px 5px #000;
   box-shadow: 5px 5px 20px #000;
   transition: .3s;
+  cursor: pointer;
+}
+nav ul #publicar_nav a.disabled{
+  background-color: grey;
+  cursor: default;
 }
 nav ul #publicar_nav a:hover{
   transform: scale(1.1);
@@ -228,6 +234,7 @@ figure{
   text-shadow: 2px 2px 5px #000;
   box-shadow: 5px 5px 20px #000;
   color: #fff;
+  cursor: pointer;
 }
 
 /*@media print {
